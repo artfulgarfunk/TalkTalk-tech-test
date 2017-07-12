@@ -17,9 +17,9 @@ namespace VendingMachineApplication
       change = 0;
     }
 
-    public string updateCredit(int x)
+    public string updateCredit(int amount)
     {
-      credit = x*50;
+      credit = amount*50;
       return("User credit: £" + credit/100 + "\nSelect 1. for Water or \n2. for Chips");
     }
 

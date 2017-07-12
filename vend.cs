@@ -7,7 +7,6 @@ namespace VendingMachineApplication
   {
 
     public Snack[] Snacks { get; set; }
-    // public double[] coins { get; set; }
     public double credit { get; set; }
     public double change { get; set; }
 
@@ -77,7 +76,6 @@ namespace VendingMachineApplication
     {
       VendingMachine v = new VendingMachine();
       User user = new User();
-      // PUBLIC METHODS FOR CLI INTERFACE
       user.insertCoins(2, v);
       user.selectSnack(2, v);
       user.selectSnack(1, v);

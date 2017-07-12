@@ -3,7 +3,7 @@
 ## An Object-Oriented Vending Machine program created in C#
 
 # Design
-This project was put together in less than 24 hours, with no prior experience in C# whatsoever.
+This project was put together in less than 24 hours, with no prior experience in C#.
 
 In order to object orient the process I considered the process as made up or 5 potential classes: User, VendingMachine, Snack, Coin, Vend (as a project runner class). I elected not to use Coin due to time constraints.
 Each class should know as little about the others as possible and have separate concerns, as well as DRY and SOLID code.
@@ -18,7 +18,6 @@ There are MANY design flaws as a function of unfamiliarity with C#. Given more t
 - All of the classes are within one folder. For whatever reason I couldn't successfully separate the classes into different files without errors.
 - processRequest method is very long, given more understanding of C# I would keep all methods at 5 lines or less.
 - Ideally whenever a VendingMachine is initialized it would have default values but could take arguments to define attributes such as available coins, available stock and so on.
-
 
 ## Requirements
 - Vending Machine accepts 50p coins only, but can give correct change
@@ -37,5 +36,4 @@ There are MANY design flaws as a function of unfamiliarity with C#. Given more t
 - Adapt the user.insertCoins() and user.selectSnack() methods in the Vend class to see how the project runs
 
 # Diagram
-
 ![Imgur](http://i.imgur.com/KX7KOc1.png)

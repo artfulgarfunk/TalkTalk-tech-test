@@ -12,12 +12,13 @@ See the sequence diagram below for program structure.
 There are MANY design flaws as a function of unfamiliarity with C#. Given more time here are some obvious next steps:
 - I was unable to make the Snacks array available across the whole class instance so it has to be initialized in the processRequest method. It should be initialized within the public VendingMachine() class method as a member variable.
 - VendingMachine only returns the change as an integer. It should be relatively simple to deduce what coins were necessary to return to the user by dividing the change owed by progressively smaller coin denominations, then returning them as an array to the User class.
-- VendingMachine doesn't return a Snack object to the User class, only a string
+- There is no Coin class, which may have merit as a class if the program were to be scaled further.
+- VendingMachine doesn't return a Snack object to the User class, only a string. User should have their own purse and snacks array.
 - Dependency inversion should be applied to the VendingMachine class as it currently refers directly to the Snack class which is an unnecessary coupling (as opposed to an object which it gets passed on intialization).
 - All the methods are public, which means each class has an unnecessarily large public interface. As most of this project was tinkering with C# for the first time, I kept them public so that it would run.
 - All of the classes are within one folder. For whatever reason I couldn't successfully separate the classes into different files without errors.
 - processRequest method is very long, given more understanding of C# I would keep all methods at 5 lines or less.
-- Ideally whenever a VendingMachine is initialized it would have default values but could take arguments to define attributes such as available coins, available stock and so on.
+- A key aspect of good design is that it reduces the cost of change. Thus ideally whenever a VendingMachine is initialized it would have default values but could take arguments to define attributes such as available coins, available stock and so on.
 
 ## Requirements
 - Vending Machine accepts 50p coins only, but can give correct change

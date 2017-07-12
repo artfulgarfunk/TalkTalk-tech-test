@@ -26,4 +26,4 @@ In order to object orient the process I considered
 
 # Diagram
 
-![Class/Sequence Diagram](http://imgur.com/KX7KOc1)
+[Imgur](http://i.imgur.com/KX7KOc1.png)

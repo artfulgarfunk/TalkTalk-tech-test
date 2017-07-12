@@ -26,4 +26,4 @@ In order to object orient the process I considered
 
 # Diagram
 
-[Imgur](http://i.imgur.com/KX7KOc1.png)
+![Imgur](http://i.imgur.com/KX7KOc1.png)

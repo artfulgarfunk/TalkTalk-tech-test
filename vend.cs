@@ -77,11 +77,11 @@ namespace VendingMachineApplication
     {
       VendingMachine v = new VendingMachine();
       User user = new User();
-      // PUBLIC METHODS FOR CLI INTERFACE LATER
+      // PUBLIC METHODS FOR CLI INTERFACE
       user.insertCoins(2, v);
       user.selectSnack(2, v);
-      user.selectSnack(1 , v);
-      user.selectSnack(1 , v);
+      user.selectSnack(1, v);
+      user.selectSnack(1, v);
       user.insertCoins(2, v);
       user.selectSnack(1, v);
     }
